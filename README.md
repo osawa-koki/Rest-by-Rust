@@ -14,3 +14,11 @@ cargo run
 cargo build --release --target-dir ./bin
 ./bin/release/rest-by-rust
 ```
+
+以下のパスにアクセスしてみる。  
+
+- /
+- /api/hello (GET)
+- /api/hello (POST) - JSON形式でnameプロパティに値をセット
+- /api/hello (PUT)
+- /api/hello (DELETE)
