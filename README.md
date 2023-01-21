@@ -31,3 +31,8 @@ Dockerfileから直接実行するには、以下のコマンドを実行。
 docker build -t rest-by-rust .
 docker run -it --rm -p 8080:8080 --name my-rest-by-rust rest-by-rust
 ```
+
+## 補足
+
+本当は以下のようなDockerfileを書きたかったけど、`cargo install`コマンドってプログラムのエントリポイントがないといけないらしい、、、  
+エントリポイントは修正することが多いから、レイヤ構築によるパフォーマンス最適化はできないのかな？？？  
