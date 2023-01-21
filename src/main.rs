@@ -8,7 +8,7 @@ struct Hello {
 
 #[derive(Serialize)]
 struct Greeting {
-    message: String
+  message: String
 }
 
 async fn hello_get() -> impl Responder {
